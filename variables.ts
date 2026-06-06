@@ -1,18 +1,19 @@
-// Declare a string variable and assign an initial value
+// both type and initial value
 var employeeName: string = "Upendar Sankoju";
-console.log(employeeName); // Prints employee name
+console.log(employeeName);
 
-// Declare a number variable and assign an initial value
+// both type and initial value
 var employeeAge: number = 30;
-console.log(employeeAge); // Prints employee age
+console.log(employeeAge);
 
-// Declare a string variable with a welcome message
+// both type and initial value
 var upendar: string = "Welcome to TypeScript programming";
-console.log(upendar); // Prints welcome message
+console.log(upendar);
 
-// Declare a string variable without an initial value
-var rajuName: string;
+// only the type
+var rajuName: string; // type
 
-// Assign a value later
-rajuName = "Hello Good Morning";
-console.log(rajuName); // Prints greeting message
+// initialize the value
+rajuName = "Hello Good Morning"; // initialize
+
+console.log(rajuName);
