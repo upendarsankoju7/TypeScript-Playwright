@@ -17,3 +17,13 @@ var rajuName: string; // type
 rajuName = "Hello Good Morning"; // initialize
 
 console.log(rajuName);
+
+var employee: string ;
+
+employee = "Welcomem Raju"; // initialize
+
+console.log(employee); // undefined
+ let employee1 
+ 
+
+
