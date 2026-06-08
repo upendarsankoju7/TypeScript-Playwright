@@ -1,46 +1,56 @@
+// =====================================
+// TYPESCRIPT DATA TYPES EXAMPLE
+// =====================================
+
+
 // ==============================
 // NUMBER DATA TYPE
 // ==============================
 
-// Declaring a number variable and assigning value 10
+// Number variable with value 10
 var first: number = 10;
 console.log(first); // Output: 10
 
-// Another number variable with value 40
+// Number variable with value 40
 var second: number = 40;
 console.log(second); // Output: 40
+
 
 
 // ==============================
 // STRING DATA TYPE
 // ==============================
 
-// String variable to store first name
-var frisName: string = "johnny ";
+// String variable to store employee name
+var firstName: string = "Johnny ";
 
 // String variable to store department name
-var Department: string = "IT";
+var department: string = "IT";
 
-// Concatenating multiple strings into a single string
-var full: string = frisName + "Working here in " + Department;
+// Combining strings using concatenation
+var fullMessage: string = firstName + "Working here in " + department;
 
-// Displaying the combined string
-console.log(full); // Output: johnny Working here in IT
+// Displaying the combined message
+console.log(fullMessage);
+// Output: Johnny Working here in IT
+
 
 
 // ==============================
 // BOOLEAN DATA TYPE
 // ==============================
 
-// Boolean variable can hold only true or false
-var SecondName: boolean = true;
+// Boolean variable can store only true or false
+var isActive: boolean = true;
 
 // Displaying boolean value
-console.log(SecondName); // Output: true
+console.log(isActive);
+// Output: true
 
-// Boolean value converted to string and concatenated
-console.log("This is boolean value: " + SecondName);
+// Boolean value inside a string
+console.log("This is boolean value: " + isActive);
 // Output: This is boolean value: true
+
 
 
 // ==============================
@@ -49,72 +59,74 @@ console.log("This is boolean value: " + SecondName);
 
 // A void function does not return any value
 
-/*
-function myFunction(): void {
-    console.log("This is void function");
+function displayMessage(): void {
+    console.log("This is a void function");
 }
-*/
+
+displayMessage();
+
 
 
 // ==============================
-// NULL AND UNDEFINED
+// NULL DATA TYPE
 // ==============================
 
-// null represents an intentional empty value
-// undefined means a variable has not been assigned a value
+// null represents an intentionally empty value
 
-/*
-var MyNumber: number = null;
-MyNumber = 123;
-console.log(MyNumber); // Output: 123
+var myNumber: number | null = null;
 
-// Variable initially assigned undefined
-var MyName: string = undefined;
-MyName = "Upendar Sankoju";
-console.log(MyName); // Output: Upendar Sankoju
-*/
+myNumber = 123;
+
+console.log(myNumber);
+// Output: 123
+
+
+
+// ==============================
+// UNDEFINED DATA TYPE
+// ==============================
+
+// Variable declared but value assigned later
+
+var myName: string | undefined = undefined;
+
+myName = "Upendar Sankoju";
+
+console.log(myName);
+// Output: Upendar Sankoju
+
 
 
 // ==============================
 // ANY DATA TYPE
 // ==============================
 
-// 'any' allows a variable to store values of any type
-var MysecondName: any = "Sankoju"; // string
+// 'any' can store values of different data types
 
-MysecondName = 123;          // number
-MysecondName = "Ravi Kumar"; // string
-MysecondName = true;         // boolean
+var mySecondName: any = "Sankoju";
+console.log(mySecondName); // Output: Sankoju
 
-// Final value stored is true
-console.log(MysecondName); // Output: true
+mySecondName = 123;
+console.log(mySecondName); // Output: 123
+
+mySecondName = "Ravi Kumar";
+console.log(mySecondName); // Output: Ravi Kumar
+
+mySecondName = true;
+console.log(mySecondName); // Output: true
 
 
-// ==============================
-// FUNCTION USING ANY TYPE
-// ==============================
 
-// Function accepts parameters of any type
-function myFun(j: any, K: any) {
-    console.log(j + K);
-}
-
-// Number addition
-myFun(10, 20); // Output: 30
-
-// String concatenation
-myFun("Hello ", "World"); // Output: Hello World
 
 
 // ==============================
-// SUMMARY OF TYPES USED
+// SUMMARY OF TYPESCRIPT DATA TYPES
 // ==============================
-//
-// number    -> Stores numeric values (10, 20, 30)
-// string    -> Stores text values ("Hello")
-// boolean   -> Stores true or false
-// void      -> Function returns no value
-// null      -> Empty value assigned intentionally
-// undefined -> Variable has no value assigned
+
+// number    -> Stores numeric values
+// string    -> Stores text values
+// boolean   -> Stores true or false values
+// void      -> Function does not return a value
+// null      -> Represents an empty value
+// undefined -> Variable declared but not assigned
 // any       -> Can store any type of value
-//
