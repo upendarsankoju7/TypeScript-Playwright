@@ -1,37 +1,106 @@
-// both type and initial value
+// =====================================
+// VARIABLE DECLARATION IN TYPESCRIPT
+// =====================================
+
+
+// Both type annotation and initial value are provided
 var employeeName: string = "Upendar Sankoju";
-console.log(employeeName); // Prints employee name
 
-// both type and initial value
+// Prints employee name
+console.log(employeeName); // Output: Upendar Sankoju
+
+
+// Both type annotation and initial value are provided
 var employeeAge: number = 30;
-console.log(employeeAge); // Prints employee age
 
-// both type and initial value
+// Prints employee age
+console.log(employeeAge); // Output: 30
+
+
+// String variable with an initial value
 var upendar: string = "Welcome to TypeScript programming";
-console.log(upendar); // Prints welcome message
 
-// only the type declaration
-var rajuName: string; // Variable type is string
+// Prints welcome message
+console.log(upendar);
+// Output: Welcome to TypeScript programming
 
-// initialize the value later
-rajuName = "Hello Good Morning"; // Assign value
-console.log(rajuName); // Prints greeting message
 
-// only the type declaration
-var employee: string; // Variable type is string
+// =====================================
+// DECLARE FIRST, ASSIGN LATER
+// =====================================
 
-// initialize the value later
-employee = "Welcomem Raju"; // Assign value
-console.log(employee); // Prints assigned value
 
-// only the initial value (TypeScript infers the type as string)
+// Variable declared with type string
+var rajuName: string;
+
+// Value assigned later
+rajuName = "Hello Good Morning";
+
+// Prints assigned value
+console.log(rajuName);
+// Output: Hello Good Morning
+
+
+// Variable declared with type string
+var employee: string;
+
+// Value assigned later
+employee = "Welcome Raju";
+
+// Prints assigned value
+console.log(employee);
+// Output: Welcome Raju
+
+
+// =====================================
+// TYPE INFERENCE
+// =====================================
+
+
+// TypeScript automatically infers the type as string
+// because the assigned value is a string
 var hp = "Welcome for TypeScript programming";
-console.log(hp); // Prints welcome message
 
-// without type annotation and without initial value
-var DogName; // Type is 'any'
+// Prints the message
+console.log(hp);
+// Output: Welcome for TypeScript programming
 
-// initialize the value later
+
+// =====================================
+// ANY TYPE (NO TYPE ANNOTATION)
+// =====================================
+
+
+// No type and no initial value
+// TypeScript treats it as 'any'
+var DogName;
+
+// Value assigned later
 DogName = "Tommy";
-console.log(DogName); // Prints dog name
 
+// Prints dog name
+console.log(DogName);
+// Output: Tommy
+
+
+// =====================================
+// SUMMARY
+// =====================================
+//
+// 1. Explicit Type + Value
+//    var employeeName: string = "Upendar";
+//
+// 2. Type Only
+//    var name: string;
+//    name = "Raju";
+//
+// 3. Value Only (Type Inference)
+//    var hp = "Welcome";
+//
+// 4. No Type and No Value
+//    var DogName;  // any type
+//
+// TypeScript automatically determines the type
+// when a value is assigned during declaration.
+// This feature is called Type Inference.
+//
